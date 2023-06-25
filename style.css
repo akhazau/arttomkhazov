@@ -20,8 +20,9 @@ header
 }
 header .logo
 {
-  font-size: 1em;
+  font-size: 5em;
   color: #fff;
+  align-items: center;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -86,10 +87,9 @@ header .logo
 
 .text h2
 {
-  font-size: 7em;
   font-weight: 900;
   color: #fff;
-  line-height: 1.9em;
+  line-height: 1em;
   align-items: center;
   text-transform: uppercase;
   opacity: 50%;
