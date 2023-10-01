@@ -210,3 +210,7 @@ header .logo
   color: white;
   background-color: transparent;
 }
+    .icon {
+        width: 48px;
+        height: 48px;
+    }
