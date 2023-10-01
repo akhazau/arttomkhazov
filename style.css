@@ -51,9 +51,11 @@ header .logo {
 }
 
 .text {
+    position: relative;
     z-index: 10;
-    text-align: center; /* Выравнивание текста по центру */
-    margin-bottom: 20px; /* Добавление отступа снизу, чтобы предотвратить перекрытие */
+    display: flex;
+    justify-content: flex-end;  /* выравнивание контента по правому краю */
+    text-align: right;  /* выравнивание текста по правому краю */
 }
 
 .text h2 {
@@ -163,8 +165,9 @@ header .logo {
     header {
         padding: 30px 30px;
     }
-    .text {
-        left: 20px;
+ .text {
+        justify-content: center;  /* выравнивание контента по центру */
+        text-align: center;  /* выравнивание текста по центру */
     }
     header .logo {
         font-size: 2.5em;
