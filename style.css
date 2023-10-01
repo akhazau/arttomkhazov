@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 body, html {
     margin: 0;
@@ -14,14 +21,20 @@ header {
 }
 
 header .logo {
-    font-size: 2.5em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
 }
-
 .showcase {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     min-height: 100vh;
     background: #111;
@@ -38,21 +51,21 @@ header .logo {
 }
 
 .text {
-    position: relative;
     z-index: 10;
-    color: white;
+    text-align: center; /* Выравнивание текста по центру */
+    margin-bottom: 20px; /* Добавление отступа снизу, чтобы предотвратить перекрытие */
 }
 
 .text h2 {
     font-size: 3em;
     font-weight: 900;
+    margin: 0; /* Удаление верхнего и нижнего отступов */
 }
 
 .text p {
-    margin-bottom: 20px;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #fff;
-    font-weight: 500;
+    margin: 0; /* Удаление верхнего и нижнего отступов */
 }
 
 .text a {
@@ -126,23 +139,92 @@ header .logo {
 }
 
 @media (max-width: 991px) {
+
+@media (max-width: 1200px) {
     header {
-        padding: 10px;
+        padding: 50px 50px;
     }
-    .showcase {
-        padding: 10px;
+    .text {
+        left: 35px;
+    }
+    header .logo {
+        font-size: 3em;
+    }
+    .text h2 {
+        font-size: 3em;
+    }
+    #muteButton {
+        top: 50px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 30px 30px;
+    }
+    .text {
+        left: 20px;
+    }
+    header .logo {
+        font-size: 2.5em;
+    }
+    .text h2 {
+        font-size: 2.5em;
+    }
+    #muteButton {
+        top: 30px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 20px;
+    }
+    .text {
+        left: 10px;
+    }
+    header .logo {
+        font-size: 2em;
     }
     .text h2 {
         font-size: 2em;
     }
     .text p {
-        font-size: 1em;
+        font-size: 0.8em;
     }
-    .menu ul li a {
-        font-size: 1em;
+    #muteButton {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px 10px;
+    }
+    .text {
+        left: 5px;
+    }
+    header .logo {
+        font-size: 1.5em;
+    }
+    .text h2 {
+        font-size: 1.5em;
+    }
+    .text p {
+        font-size: 0.7em;
     }
     #muteButton {
         top: 10px;
         right: 10px;
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+    .social li a {
+        transform: scale(0.4);
     }
 }
