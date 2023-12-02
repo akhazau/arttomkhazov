@@ -17,7 +17,9 @@
          <h2 class="logo">ARTTOM KHAZOV</h2>
          <div class="toggle"></div>
        </header>
-       <video id="showreel" src="bgv.webm" muted loop autoplay></video>
+     <video id="showreel" muted loop autoplay>
+    <source src="bgv.h264.mp4" type="video/mp4">
+</video>
  <div class="overlay"></div>
        <div class="text">
          <h2>COLORIST</h2>
@@ -27,13 +29,9 @@
 
 
          <a href="#">color@arttomkhazov.com</a>
-         <button id="muteButton">Unmute</button> <!-- Add a button for muting/unmuting the video -->
+        <button id="muteButton">Unmute</button> <!-- Add a button for muting/unmuting the video -->
        </div>
-       <ul class="social">
-         <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-         <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-         <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-       </ul>
+
      </section>
      <div class="menu">
        <ul>
@@ -43,7 +41,12 @@
          <li><a href="#">Contacts</a></li>
        </ul>
      </div>
-	<script>
+      <ul class="social">
+         <li><a href="#"><img src="icons/linkedin.svg"></a></li>
+         <li><a href="#"><img src="icons/whatsapp.svg"></a></li>
+         <li><a href="#"><img src="icons/instagram.svg"></a></li>
+       </ul>
+  <script>
       const menuToggle = document.querySelector('.toggle');
       const showcase = document.querySelector('.showcase');
       const video = document.getElementById('showreel');

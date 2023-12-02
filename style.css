@@ -156,6 +156,14 @@ header .logo
 {
   transform: scale(0.5) translateY(-15px);
 }
+
+.social li a img {
+    width: 24px;  /* Обновленный размер иконок */
+    height: 24px;  /* Обновленный размер иконок */
+    
+}
+
+
 .menu
 {
   position: absolute;
@@ -210,3 +218,7 @@ header .logo
   color: white;
   background-color: transparent;
 }
+    .icon {
+        width: 48px;
+        height: 48px;
+    }
